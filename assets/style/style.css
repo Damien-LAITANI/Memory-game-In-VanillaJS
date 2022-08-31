@@ -1,0 +1,167 @@
+body {
+  background: #F0F0BB;
+}
+
+.container__beforeGame {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+.beforeGame {
+  z-index: 999;
+  margin: 0;
+  background-color: grey;
+  opacity: 0.5;
+  width: 100vw;
+  height: 100vh;
+}
+
+.text__beforeGame {
+  position: absolute;
+  z-index: 1000;
+  color:  black;
+  font-size: 4rem;
+}
+
+h1, 
+h2, 
+p {
+  color: #181C16;
+  font-family: 'Original Surfer', cursive;
+}
+
+#container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+#title {
+  position: absolute;
+  top: 0;
+  font-size: 50px;
+  margin: 0;
+  padding-top: 5px;
+}
+
+#collection {
+  margin: 0;
+  text-decoration: underline;
+}
+
+#blockJeu {
+  background: #E0A7A6;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin-top: 65px;
+  border: 5px solid #323B2E;
+  border-radius: 5px;
+  width: 80%;
+  height: 660px;
+}
+
+#blockJeu #result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#blockJeu p {
+  font-size : 30px;
+  text-align: center;
+  margin: 0;
+}
+
+.cards {
+  background: #FFFFF2;
+  margin: 6px;
+  border: 5px outset #59592F;
+  border-radius: 8px;
+  box-shadow: 2px 5px 15px #945251;
+  width: 10.7%;
+  height: 21%;
+  overflow: hidden;
+}
+
+.cards:hover {
+  cursor: pointer;
+  animation: rotateCards 320ms ease-out;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+#paireWin {
+  background: #A6A68A;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-self: flex-end;
+  border: 5px solid #323B2E;
+  border-radius: 8px;
+  font-size: 15px;
+  width: 200px;
+  height: 100%;
+}
+
+#paireWin .imgWin {
+  background: white;
+  position: relative;
+  border: 4.2px solid #59592F;
+  border-radius: 80px;
+  box-shadow: 2px 3px 5px grey;
+  margin: 2px;
+  width: 75px;
+  height: 75px;
+  overflow: hidden;
+}
+
+#paireWin img {
+  position: relative;
+  left: -6px;
+  bottom: 7px;
+  width: 95px;
+  height: 95px;
+}
+
+#btn {
+  background: #949447;
+  border: 1px solid #181C16;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-size: 30px;
+  color: #181C16;
+  width: 250px;
+  height: 50px;
+}
+
+#btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+@keyframes rotateCards {
+  0% {transform: rotate(0deg);}
+  10% {transform: rotate(2deg);}
+  25% {transform: rotate(5deg);}
+  50% {transform: rotate(0deg);}
+  75% {transform: rotate(-5deg);}
+  80% {transform: rotate(-2deg);}
+  100% {transform: rotate(0deg);}
+}
